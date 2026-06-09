@@ -4,5 +4,5 @@ def count_names_ending_with_h(names):
         if name[len(name) - 1] == "h":
             count = count + 1 
     return count
-result = count_names_ending_with_h(["Sarah", "John", "Bharath", "Ben", "Hannah", "mh"])
+result = count_names_ending_with_h(["Sarah", "John", "Bharath", "Ben", "Hannah", ])
 print(result)

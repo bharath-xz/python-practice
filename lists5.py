@@ -6,4 +6,3 @@ def count_names_starting_with_a(names):
     return count
 result = count_names_starting_with_a(["Arjun", "Bharath", "Alice", "Sarah", "Andrew"])
 print(result)    
-
