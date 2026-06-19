@@ -1,4 +1,4 @@
-password = input("Enter your password").strip()
+password = input("Enter your password:").strip()
 errors = []
 if len(password) < 8:
     errors.append("must be atleast 8 charactes")
@@ -11,7 +11,7 @@ if not any(char.isupper() for char in password) :
 
 if errors:
     print("Weak password")
-    print("isuues:")
+    print("issues:")
     for err in errors:
         print(err)
 
