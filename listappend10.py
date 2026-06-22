@@ -4,5 +4,5 @@ def get_lenghts_of_long_names(names):
         if len(name) > 5:
             result.append(len(name))
     return result
-result = get_lenghts_of_long_names(["john", "Bharath", "Ben", "Alexander", "Sam"])
+result = get_lenghts_of_long_names(["John", "Bharath", "Ben", "Alexander", "Sam"])
 print(result)
