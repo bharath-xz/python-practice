@@ -15,9 +15,16 @@ def contains_number(password):
         if char.isdigit():
             return "Yes"
     return "No"
-password ="Cyber13tt"
+def count_numbers(password):
+    count = 0
+    for char in password:
+            if char.isdigit():
+                  count +=1
+    return count
+password = input("Enter a password: ")
 print("Password:", password)
 print("Length:", password_length(password))
 print("Contains number:", contains_number(password))
 print("Starts with uppercase:", starts_with_uppercase(password))
 print("Ends with number:", ends_with_number(password))
+print("Number of digits: ", count_numbers(password))
