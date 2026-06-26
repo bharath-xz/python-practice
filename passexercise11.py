@@ -3,6 +3,6 @@ def count_uppercase(password):
     for char in password:
         if char.isupper():
             count +=1
-    return count > 0
+    return count 
 password = "CyberSEC123"
 print(count_uppercase(password))

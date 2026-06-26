@@ -16,7 +16,7 @@ def contains_lowercase(password):
             return "Yes"
     return "No"
 def starts_with_uppercase(password):
-    if password[0].isupper:
+    if password[0].isupper():
         return "Yes"
     else:
         return "No"

@@ -4,5 +4,5 @@ def contains_uppercase(password):
             return "Yes"
         
     return "No"
-password = " "
+password = "Cyber123 "
 print(contains_uppercase(password))
