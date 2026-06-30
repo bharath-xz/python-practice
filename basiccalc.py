@@ -13,25 +13,22 @@ def show_menu():
     print("3. Multiply")
     print("4. Divide")
     print("5. Quit")
+def get_numbers():
+   a = float(input("First number: "))
+   b = float(input("Second number: "))
+   return a, b
 show_menu()
 choice = ""
 while choice != "5":
-    choice = input("Choose: ") 
+    choice = input("Choose: ")
+    a, b = get_numbers() 
     if choice == "1":
-        a = float(input("First number: "))
-        b = float(input("Second number: "))
         print("Result = ", add(a, b))
     elif choice == "2":
-        a = float(input("First number: "))
-        b = float(input("Second number: "))
         print("Result = ",subtract(a, b))
     elif choice == "3":
-        a = float(input("First number: "))
-        b = float(input("Second number: "))
         print("Result = ",multiply(a, b))
     elif choice == "4":
-        a = float(input("First number: "))
-        b = float(input("Second number: "))
         if b == 0:
             print("Cannot divide by zero")
         else:
